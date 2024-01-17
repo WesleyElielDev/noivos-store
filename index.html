@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noivos Store</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<headder>
+   
+
+    <h1 id="nomesNoivos">Glauder & Aquila</h1>
+
+   
+    <div class="icones">
+            <ion-icon name="cart-outline" id="a"></ion-icon>
+
+            <ion-icon name="invert-mode" id="clean" onclick="themeToggle()"></ion-icon>
+            
+            <ion-icon name="reorder-three-outline" onclick="topicos()" id="a"></ion-icon> 
+    </div>
+</headder>
+
+
+
+<div class="categorias">
+    <ion-icon name="close" onclick="fecharModal()" id="close"></ion-icon>
+    <button id="casalbtn">Para o Casal</button>
+    <button id="noivabtn">Para a Noiva</button>
+    <button id="casalbtn">Para o Noivo</button>
+</div>
+
+<div class="musica">
+    <h4><ion-icon name="musical-notes"></ion-icon>Escute a música do casal enquanto escolhe seu presente</h4>
+<audio controls>
+    <source src="./all-off-me.mp3" type="audio/mp3">
+</audio>
+</div>
+ 
+<div class="products">
+    
+    <div id="product-1">
+        <img src="./images/geladeira.png" alt="produto teste">
+        <h2 id="namePresent"><a href="#">Geladeira</a></h2>
+        <span id="preco">R$ 599,90</span>
+        <p>Em 12x <strong>sem juros</strong></p>
+        <div class="botao">
+        <a href="https://pay.infinitepay.io/wesley_eliel_pim/599,90" target="_blank"><button>PRESENTEAR</button></a>
+        </div>
+    </div>
+
+    <div id="product-2">
+        <img src="./images/projeto-fitness.jpg" alt="produto teste">
+        <h2><a href="#">Projeto Fitness</a></h2>
+        <span id="preco">R$ 200,00</span>
+        <p>Em 12x <strong>sem juros</strong></p>
+        <div class="botao">
+        <a href="https://pay.infinitepay.io/wesley_eliel_pim/200,00" target="_blank"><button>PRESENTEAR</button></a>
+        </div>
+    </div>
+
+    <div id="product-3">
+        <img src="./images/panela.png" alt="produto teste">
+        <h2><a href="#">Jogo de panela</a></h2>
+        <span id="preco">R$ 349,90</span>
+        <p>Em 12x <strong>sem juros</strong></p>
+        <div class="botao">
+        <a href="https://pay.infinitepay.io/wesley_eliel_pim/349,90" target="_blank"><button>PRESENTEAR</button></a>
+        </div>
+    </div>
+    <div id="product-6">
+        <img src="./images/copos.jpg" alt="produto teste">
+        <h2><a href="#">Jogo de Copos</a></h2>
+        <span id="preco">R$ 79,90</span>
+        <p>Em 12x <strong>sem juros</strong></p>
+        <div class="botao">
+        <a href="https://pay.infinitepay.io/wesley_eliel_pim/79,90" target="_blank"><button>PRESENTEAR</button></a>
+        </div>
+    
+    </div>
+    <div id="product-5">
+        <img src="./images/AIR-FRYER.jpg" alt="produto teste">
+        <h2><a href="#">Air Fryer</a></h2>
+        <span id="preco">R$ 189,90</span>
+        <p>Em 12x <strong>sem juros</strong></p>
+        <div class="botao">
+        <a href="https://pay.infinitepay.io/wesley_eliel_pim/189,90" target="_blank"><button>PRESENTEAR</button></a>
+        </div>
+    </div>
+    <div id="product-4">
+        <img src="./images/tadala-novo.jpg" alt="produto teste">
+        <h2><a href="#">Azulzin para o noivo</a></h2>
+        <span id="preco">R$ 19,90</span>
+        <p>Em 12x <strong>sem juros</strong></p>
+        <div class="botao">
+        <a href="https://pay.infinitepay.io/wesley_eliel_pim/19,90" target="_blank"><button>PRESENTEAR</button></a>
+        </div>
+   
+    </div>
+    <div id="product-7">
+        <img src="./images/fantasia-noiva.jpg" alt="produto teste">
+        <h2><a href="#">Pantufa da Noiva</a></h2>
+        <span id="preco">R$ 19,90</span>
+        <p>Em 12x <strong>sem juros</strong></p>
+        <div class="botao">
+        <a href="https://pay.infinitepay.io/wesley_eliel_pim/19,90" target="_blank"><button>PRESENTEAR</button></a>
+        </div>
+    </div>
+    <div id="product-8">
+        <img src="./images/KIT-CHURRASCO.jpg" alt="produto teste">
+        <h2><a href="#">Kit churras de Domingo</a></h2>
+        <span id="preco">R$ 149,90</span>
+        <p>Em 12x <strong>sem juros</strong></p>
+        <div class="botao">
+        <a href="https://pay.infinitepay.io/wesley_eliel_pim/149,90" target="_blank"><button>PRESENTEAR</button></a>
+        </div>
+    </div>
+</div>
+    
+    <button 
+       class="adicionar" 
+       onclick="adicionar()">
+       Palavras do casal 
+       &nbsp
+       <ion-icon name="mail-unread-outline"></ion-icon>
+    </button>
+   
+
+<div class="adicionarItem">
+
+<div class="info">
+
+    <img src="./images/bg-noivos.jpeg" alt="foto dos noivos" id="fotoCasal">
+
+    <p>
+    Queridos amigos e familiares,
+
+    É com imensa alegria e corações transbordando de amor que convidamos vocês para celebrar conosco o momento mais especial de nossas vidas. O dia em que diremos "sim" um ao outro, selando nosso amor em uma união que transcende o tempo e se eterniza.
+    Nossa jornada até aqui foi marcada por risadas compartilhadas, superações e, acima de tudo, pelo amor que floresceu entre nós. Cada um de vocês desempenhou um papel importante em nossas vidas, moldando-nos e apoiando-nos ao longo do caminho.
+    <br>Com amor,
+    Glauder e Aquila.
+</p>
+    <!--
+    <input type="file" id="file">
+    <label for="file" onclick="addImage()"><ion-icon name="images-outline"></ion-icon> </label>
+    <span>Nome do Presente</span>
+    <input type="text">
+    <span>Valor do Presente</span>
+    <input type="number">
+    -->
+<div class="botoes">
+   <a href="#product-1"><button id="add">Presentear</button></a>
+    <button id="fechar" onclick="fecharItemAdd()">fechar</button>
+</div> 
+   
+</div>
+    
+
+
+</div>
+    
+<!--
+   </div>
+   <footer>
+   
+    <img src="./images/casal-test.png" alt="casal teste">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla blanditiis pariatur aliquid, accusantium sint quasi. Sit, ullam provident velit, cum quos nam odio quae odit obcaecati illo, officia aut quisquam!</p>
+    <img src="./images/payment-methods.png" alt="pix">
+    <img src="./images/payment-methods.png" alt="card">
+    <img src="./images/security.png" alt="page safe">
+    <span>Feito com muito <ion-icon name="heart"></ion-icon> por <a href="#">Wesley Eliel</a></span>
+
+    </footer>
+
+    -->
+<footer>Desenvolvido com &nbsp <ion-icon name="heart"></ion-icon>&nbsp por &nbsp <a target="_blank" href="https://api.whatsapp.com/send?phone=5533991108605&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20trabalhos!">Wesley Eliel.</a></footer>
+    <script src="./script.js"></script>
+
+</body>
+</html>
