@@ -33,9 +33,9 @@
 
 <div class="categorias">
     <ion-icon name="close" onclick="fecharModal()" id="close"></ion-icon>
-    <button id="casalbtn">Para o Casal</button>
-    <button id="noivabtn">Para a Noiva</button>
-    <button id="casalbtn">Para o Noivo</button>
+    <a href="#info"><button id="casalbtn" onclick="adicionar()">História do Casal</button></a>
+    <a href="https://maps.app.goo.gl/6KR3A9fvzvY3vu5K6" target="_blank"><button id="noivabtn">Local do evento</button></a>
+    
 </div>
 
 <div class="musica">
@@ -127,7 +127,8 @@
     
     <button 
        class="adicionar" 
-       onclick="adicionar()">
+       onclick="adicionar()"
+       >
        Palavras do casal 
        &nbsp
        <ion-icon name="mail-unread-outline"></ion-icon>
@@ -136,7 +137,7 @@
 
 <div class="adicionarItem">
 
-<div class="info">
+<div id="info">
 
     <img src="./images/bg-noivos.jpeg" alt="foto dos noivos" id="fotoCasal">
 

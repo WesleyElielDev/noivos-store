@@ -290,7 +290,7 @@ label{
     color: var(--font-color);
 }
 
-.info{
+#info{
     justify-content:space-around;
     align-items: center;
     display: flex;
@@ -302,7 +302,7 @@ label{
     color: var(--font-color);
 }
 
-.info input{
+#info input{
     width: 250px;
     height: 30px;
     margin: auto;
