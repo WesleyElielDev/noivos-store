@@ -225,12 +225,15 @@ headder h1 {
     align-items: center;
     background-color: var(--bg-product);
 }
+
+/* MODAL CATEGORIAS */
+
 .categorias button{
     background-color: rgb(40, 40, 40);
     color: white;
     border: none;
     border-radius: 5px;
-    height: 25px;
+    height: 35px;
     width: 150px;
     cursor: pointer;
 }
