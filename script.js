@@ -8,7 +8,7 @@ function fecharModal(){
     modalCategorias.classList.remove('activeModal')
 }
 
-//ABRIR MODAL ADICIONAR PRESENTE
+//ABRIR MODAL PALAVRAS DO CASAL
 const addItems = document.querySelector('.adicionarItem')
 
 function adicionar(){
@@ -17,7 +17,6 @@ function adicionar(){
 function fecharItemAdd(){
     addItems.classList.remove('activeAddItem')
 }
-
 
 // DARK MODE
 function themeToggle(){

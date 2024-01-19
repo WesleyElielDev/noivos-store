@@ -66,7 +66,6 @@ headder h1 {
     border-radius: 100%;
 }
 
-
 /* PRODUTOS */
 
 .products{
@@ -241,7 +240,6 @@ headder h1 {
     color: var(--font-color);
 }
 
-
 .activeModal{
     display: flex;
 }
@@ -353,6 +351,7 @@ p{
 .activeAddItem{
     display: flex;
 }
+/* ACESSIBILIDADE PARA MOBILE */
 
 @media (max-width: 600px){
 
@@ -435,6 +434,7 @@ headder h1{
 }
 }
 
+/* FRASE DO RODAPÉ */
 footer{
     display: flex;
     justify-content: center;

@@ -15,11 +15,11 @@
 <body>
 
 <headder>
-   
-
+    
+<!-- NOMES DOS NOIVOS -->
     <h1 id="nomesNoivos">Glauder & Aquila</h1>
 
-   
+<!-- BOTÕES DO CABEÇALHO-->
     <div class="icones">
             <ion-icon name="cart-outline" id="a"></ion-icon>
 
@@ -29,8 +29,7 @@
     </div>
 </headder>
 
-
-
+<!-- MODAL DE OPÇOES -->
 <div class="categorias">
     <ion-icon name="close" onclick="fecharModal()" id="close"></ion-icon>
     <a href="#info"><button id="casalbtn" onclick="adicionar()">História do Casal</button></a>
@@ -38,13 +37,15 @@
     
 </div>
 
+<!-- MUSICA DO CASAL -->
 <div class="musica">
     <h4><ion-icon name="musical-notes"></ion-icon>Escute a música do casal enquanto escolhe seu presente</h4>
 <audio controls>
     <source src="./all-off-me.mp3" type="audio/mp3">
 </audio>
 </div>
- 
+
+<!-- PRODUTOS DA "LOJA" -->
 <div class="products">
     
     <div id="product-1">
@@ -124,7 +125,7 @@
         </div>
     </div>
 </div>
-    
+<!-- BOTÃO PALAVRAS DO CASAL -->  
     <button 
        class="adicionar" 
        onclick="adicionar()"
@@ -134,14 +135,15 @@
        <ion-icon name="mail-unread-outline"></ion-icon>
     </button>
    
-
+<!-- FOTO DO CASAL JUNTO AS PALAVRAS -->
 <div class="adicionarItem">
 
 <div id="info">
 
     <img src="./images/bg-noivos.jpeg" alt="foto dos noivos" id="fotoCasal">
 
-    <p>
+<!-- TEXTO DO CASAL PARA OS AMIGOS E CONVIDADOS -->
+<p>
     Queridos amigos e familiares,
 
     É com imensa alegria e corações transbordando de amor que convidamos vocês para celebrar conosco o momento mais especial de nossas vidas. O dia em que diremos "sim" um ao outro, selando nosso amor em uma união que transcende o tempo e se eterniza.
@@ -149,14 +151,7 @@
     <br>Com amor,
     Glauder e Aquila.
 </p>
-    <!--
-    <input type="file" id="file">
-    <label for="file" onclick="addImage()"><ion-icon name="images-outline"></ion-icon> </label>
-    <span>Nome do Presente</span>
-    <input type="text">
-    <span>Valor do Presente</span>
-    <input type="number">
-    -->
+<!-- BOTÕES DO MODAL PAVARAS DO CASAL -->
 <div class="botoes">
    <a href="#product-1"><button id="add">Presentear</button></a>
     <button id="fechar" onclick="fecharItemAdd()">fechar</button>
@@ -164,24 +159,8 @@
    
 </div>
     
-
-
 </div>
-    
-<!--
-   </div>
-   <footer>
-   
-    <img src="./images/casal-test.png" alt="casal teste">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla blanditiis pariatur aliquid, accusantium sint quasi. Sit, ullam provident velit, cum quos nam odio quae odit obcaecati illo, officia aut quisquam!</p>
-    <img src="./images/payment-methods.png" alt="pix">
-    <img src="./images/payment-methods.png" alt="card">
-    <img src="./images/security.png" alt="page safe">
-    <span>Feito com muito <ion-icon name="heart"></ion-icon> por <a href="#">Wesley Eliel</a></span>
-
-    </footer>
-
-    -->
+<!-- LINK E FRASE DO DESENVOLVEDOR "WESLEY ELIEL" -->   
 <footer>Desenvolvido com &nbsp <ion-icon name="heart"></ion-icon>&nbsp por &nbsp <a target="_blank" href="https://api.whatsapp.com/send?phone=5533991108605&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20trabalhos!">Wesley Eliel.</a></footer>
     <script src="./script.js"></script>
 
